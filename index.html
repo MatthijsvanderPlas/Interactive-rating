@@ -16,25 +16,34 @@
 </head>
 <body>
   <main class="container">
-    <img src="./images/icon-star.svg">
+    <section class="card">
+      <img class="img-star" src="./images/icon-star.svg" alt="star">
 
-    <h2>How did we do?</h2>
+      <h2>How did we do?</h2>
 
-    <p>
-      Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!
-    </p>
-    <form action="">
-      <select name="rating">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <form action="">
+        <div class="row">
+          <div class="rating">
+            <input id="value1" type="radio" name="rating_select" />
+            <label for="value1">1</label>
+            <input id="value2" type="radio" name="rating_select" />
+            <label for="value2">2</label>
+            <input id="value3" type="radio" name="rating_select" />
+            <label for="value3">3</label>
+            <input id="value4" type="radio" name="rating_select" />
+            <label for="value4">4</label>
+            <input id="value5" type="radio" name="rating_select" />
+            <label for="value5">5</label>
+          </div>
+        </div>
 
-      <input class="submit-btn" type="submit" value="Submit">
-    </form>
+        <input class="submit-btn" type="submit" value="Submit">
+      </form>
+    </section>
   </main>
   <!-- Rating state end -->
 

@@ -20,6 +20,7 @@
     --white: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
     --mediumGrey: hsl(216, 12%, 54%);
+    --darkGrey: hsl(240, 2%, 22%);
     --darkBlue: hsl(213, 19%, 18%);
     --veryDarkBlue: hsl(216, 12%, 8%);
 }
@@ -33,13 +34,27 @@ h2 {
     font-size: 1.5rem;
 }
 
-.container {
+p {
+    opacity: .75;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
     width: 375px;
     background-color: var(--darkBlue);
     padding: 1.25rem;
-}
-.container p {
-    color: var(--lightGrey)
+    border-radius: 1rem;
+   
 }
 
 .submit-btn {
@@ -53,4 +68,64 @@ h2 {
     border-radius: 100px;
     padding: .5rem;
     pointer-events: all;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25rem;
 }
+
+.submit-btn:hover,
+.submit-btn:active {
+    background-color: var(--white);
+    color: var(--orange)
+}
+
+.img-star {
+    background-color: var(--darkGrey);
+    padding: .5em;
+    border-radius: 5rem;
+}
+.rating {
+    display: inline-block;
+    height: 4.5rem;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+    background-color: var(--darkBlue);
+}
+
+.rating::-moz-focus-inner {
+    border: 0;
+}
+
+.rating:focus {
+    outline: none;
+}
+
+.rating label {
+    position: relative;
+    width: 13%;
+    text-align: center;
+    display: inline-block;    
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 0.5rem .5rem;
+    margin: 0 auto;
+    margin-right: .65rem;
+    margin-left: .65rem;
+    background-color: var(--darkGrey);
+    border-radius: 100px;
+}
+
+.rating [type="radio"]:checked + label{
+    background-color: var(--lightGrey);
+}
+
+.rating [type="radio"]:hover + label {
+    background-color: var(--orange);
+}
+
+input[type="radio"] {
+    display: none;
+  }
