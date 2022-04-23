@@ -1,0 +1,56 @@
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    Font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    color: var(--white);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 375px;
+    background-color: var(--darkBlue);
+    padding: 1.25rem;
+}
+.container p {
+    color: var(--lightGrey)
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--orange);
+    text-decoration: none;
+    outline: none;
+    inline-size: none;
+    border: none;
+    display: block;
+    border-radius: 100px;
+    padding: .5rem;
+    pointer-events: all;
+}
