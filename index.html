@@ -15,7 +15,7 @@
 
 </head>
 <body>
-  <main class="container">
+  <main class="container card1">
     <section class="card">
       <img class="img-star" src="./images/icon-star.svg" alt="star">
 
@@ -25,18 +25,18 @@
         Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!
       </p>
-      <form action="">
+      <form method="post">
         <div class="row">
           <div class="rating">
-            <input id="value1" type="radio" name="rating_select" />
+            <input class="value" id="value1" type="radio" name="rating_select" />
             <label for="value1">1</label>
-            <input id="value2" type="radio" name="rating_select" />
+            <input class="value" id="value2" type="radio" name="rating_select" />
             <label for="value2">2</label>
-            <input id="value3" type="radio" name="rating_select" />
+            <input class="value" id="value3" type="radio" name="rating_select" />
             <label for="value3">3</label>
-            <input id="value4" type="radio" name="rating_select" />
+            <input class="value" id="value4" type="radio" name="rating_select" />
             <label for="value4">4</label>
-            <input id="value5" type="radio" name="rating_select" />
+            <input class="value" id="value5" type="radio" name="rating_select" />
             <label for="value5">5</label>
           </div>
         </div>
@@ -45,23 +45,27 @@
       </form>
     </section>
   </main>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+    <div class="container card2">
+      <section class="card container col">
+        <!-- Rating state end -->
+      <img class="img-thank" src="./images/illustration-thank-you.svg" alt="thank you">
+        <!-- Thank you state start -->
+      <div class="show-rating">You selected <span class="rating-label"></span> out of 5</div>
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+      
+        <!-- Thank you state end -->
+        </section>
+    </div>
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.stardash.nl/">Matthijs van der Plas/StarDash</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>

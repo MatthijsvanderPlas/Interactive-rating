@@ -32,25 +32,34 @@ body {
 
 h2 {
     font-size: 1.5rem;
+    margin: 0;
+    padding: 1.25rem  0 .75rem;
 }
 
 p {
     opacity: .75;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    margin: 0;
+    padding-bottom: 1rem;
 }
 
-.row {
+.container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card1 {
+    display: "";
+}
+
+.card2 {
+    display: none;
 }
 
 .card {
     width: 375px;
+    height: 325px;
     background-color: var(--darkBlue);
     padding: 1.25rem;
     border-radius: 1rem;
@@ -129,3 +138,27 @@ p {
 input[type="radio"] {
     display: none;
   }
+
+.img-thank {
+    width: 40%;
+    max-width: 80%;
+}
+
+.show-rating {
+    display: block;
+    text-align: center;
+    background-color: var(--darkGrey);
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    padding: .5rem;
+    border-radius: 100px;
+    color: var(--orange);
+}
+
+.col {
+    flex-direction: column;
+}
+
+.card.container.col p {
+    text-align: center;
+}
